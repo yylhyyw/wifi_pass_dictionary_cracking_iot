@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="/js/index.js")
+  body
+    h1= title
+
+    p Search should take 1 minute, please wait.
+
+    button(onclick='searchLoading()') Search
+
+    button(onclick='showDeviceStatus()') Device Status
+
+    button(onclick='showLog()') Log
+
+    #searchLoader
+    #searchResult
+      block content
+    #deviceStatus
+      block deviceStatus
+    #log
+      block log

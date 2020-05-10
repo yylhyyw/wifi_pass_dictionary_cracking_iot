@@ -1,0 +1,42 @@
+extends layout
+
+
+block content
+  h4 Click Searching To Start Search WiFi
+  if wifi == "true"
+    if handshake == "true"
+      if key == "true"
+        p=data
+        a(class='button', href='../').btn Back To HomePage
+      else
+        p=data
+        a(class='button', href='/attack').btn Attack
+    else
+      p=data
+      form(method='POST' action='/search')
+        div.input
+            span.label BSSID
+            input(type="text", id='BSSID', name="BSSID")
+            span.label CH
+            input(type="text", id='CH', name="CH")
+        div.actions
+            input(type="submit", value="Attack")
+
+block deviceStatus
+    if device == "true"
+      h3 ONLINE : <span class="dot"></span>
+      h4=deviceId
+      hr
+      h3 OFFLINE : <span class="offlineDot"></span>
+      h4 IoT_Light
+      h4 IoT_TV
+      h4 IoT_Car
+      h4: button(onclick='backToHome()') Back To Home
+
+block log 
+    if log == "true"
+      !{data}
+
+
+
+  

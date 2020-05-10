@@ -1,0 +1,7 @@
+*.cap
+*.csv
+*.kismet.csv
+*.kismet.netxml
+*.log.csv
+
+node_modules/
