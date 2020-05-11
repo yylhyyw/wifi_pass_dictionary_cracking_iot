@@ -3,5 +3,9 @@
 *.kismet.csv
 *.kismet.netxml
 *.log.csv
+*.key
+*.crt
+
+
 
 node_modules/

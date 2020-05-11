@@ -1,1 +1,9 @@
 User ask to get WIFI
+receives attack information
+BSSID: A4:56:CC:4A:E1:3A
+CH: 1
+first connection ....
+deauth starts ....
+ handshake file get successfully 
+deauth closed ....
+send out 4-way handshake file to IoT nodes
